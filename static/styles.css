@@ -1,0 +1,121 @@
+body {
+    background: linear-gradient(to bottom, #1a1a1a, black);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #9400d3; /* Neon Purple */
+}
+
+.chat-container {
+    max-width: 80%;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    overflow-y: auto;
+    margin: 0 auto;
+}
+
+.user-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.neon-button {
+    background-color: #9400d3; /* Neon Purple */
+    color: #00bfff; /* Electric Blue */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.neon-button:hover {
+    background-color: #4b0082; /* Dark Purple */
+}
+
+.user-input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+}
+
+#send-button {
+    background-color: #ff4500;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+#send-button:hover {
+    background-color: #cc3700;
+}
+
+/* Additional styles for messages */
+.message {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+}
+
+.user-message {
+    background-color: #4b0082; /* Dark Purple */
+}
+
+.ai-message {
+    background-color: #3498db;
+}
+
+/* Signature mark */
+.signature {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: #00bfff; /* Electric Blue */
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .chat-container {
+        max-width: 90%;
+    }
+
+    .user-input-container {
+        flex-direction: column;
+    }
+
+    .neon-button,
+    .user-input,
+    #send-button {
+        width: 100%;
+    }
+}
